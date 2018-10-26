@@ -1,0 +1,65 @@
+body {
+	font-size: large;
+}
+
+.container {
+	display: grid;
+	height: 100%;
+	grid-gap: 8px;
+	background-color: #dfe6e9;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.header {
+	grid-column: 1/-1;
+	text-align: center;
+	background-color: #2c3e50;
+	color: #fff;
+}
+.operand1 {
+	padding: 20px;
+	grid-column: 1/2;
+	background: lavender;
+}
+
+.operator {
+	grid-column: 2/3;
+	background: #b2bec3;
+}
+
+.operator h2 {
+	color: #333;
+	font-size: 30px;
+	text-align: center;
+	margin-top: 50px;
+
+}
+
+.operand2 {
+	grid-column: 3/4
+	background : lavender;
+}
+
+.tombol {
+	grid-column: 4/5;
+	background: red;
+}
+
+.tombol button {
+	background-color: #b2bec3;
+	font-size: 30px;
+	height: 100%
+}
+
+.hasil {
+	grid-column: 5/-1;
+}
+
+input {
+	text-align: center;
+	overflow: hidden;
+	padding: 15px;
+	display: block;
+	width: 180px;
+	font-size: 16px;
+}
